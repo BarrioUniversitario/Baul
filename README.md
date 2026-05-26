@@ -1,15 +1,11 @@
-# ACubelets plugin
+# Baul plugin
 
-ACubelets are a crate-like plugin.
-Each item you can get from a cubelet has a rarity, this
-rarity determines the odds of you wining the item.
+Baul is a crate-like plugin for Minecraft servers.
+Each item you can get from a baul has a rarity, this
+rarity determines the odds of you winning the item.
 
-You can choose from a large selection of animations 
-for the opening of your cubelet!
-
-> Available for purchase at:
-[SpigotMC](https://www.spigotmc.org/resources/acubelets-%E2%AD%90-23-animations-%E2%AD%90-1-16-1-21-8.78092/) and
-[BuiltByBit](https://builtbybit.com/resources/acubelets.45566/).
+You can choose from a large selection of animations
+for the opening of your baul!
 
 ## For developers
 #### How to start contributing?
@@ -18,8 +14,8 @@ for the opening of your cubelet!
 - Select your account to create a copy
 ###### 2. Clone Your Fork
 ```bash
-git clone https://github.com/your_username/ACubelets.git
-cd ./ACubelets
+git clone https://github.com/BarrioUniversitario/Baul.git
+cd ./Baul
 ```
 ###### 3. Create a new branch
 ```bash
@@ -58,5 +54,3 @@ cd <project_root_directory>
 .\gradlew.bat build
 ```
 Find the compiled jar in `build/libs` directory
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/IDavidML/ACubelets)

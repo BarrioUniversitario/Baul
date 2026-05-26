@@ -1,8 +1,0 @@
-{
-    "id": "baul-velocity",
-    "name": "BaulVelocity",
-    "version": "3.0.0",
-    "description": "Cross-server sync forwarder for Baul plugin",
-    "authors": ["DavidML16"],
-    "main": "me.davidml16.baul.velocity.BaulVelocityPlugin"
-}
