@@ -1,0 +1,78 @@
+#
+# This is the gui layout file.
+# You can change any messages that are in this file
+#
+# If you want to reset a message back to the default,
+# delete the entire line the message is on and restart the server.
+#
+# IMPORTANT: Slots numbers between 1-9, if not, the plugin will crash
+#
+
+Layout:
+
+  # GUI Title
+  Title: '&#FFAA00Ba&#FF9900úl Crafting'
+
+  # No afford message
+  NoAfford: '&#FF5555You cannot afford to craft this Baúl yet!'
+
+  # Ingredient messages
+  Ingredients:
+
+    # Ingredient lore line
+    Ingredient:
+      Cubelet: '&#AAAAAA- &#55FFFF%name% &#AAAAAAx%amount% %status%'
+      Money: '&#AAAAAA- &#55FFFF%amount% Coins %status%'
+      Points: '&#AAAAAA- &#55FFFF%amount% Loot Points %status%'
+
+    # Ingredient lore status
+    Status:
+      Available: '&#55FF55✓'
+      NotAvailable: '&#FF5555✗'
+
+    # Crafteable Baúl lore
+    Lore:
+      - '&#AA00AAIngredients:'
+      - '%ingredients%'
+      - ''
+      - '%description%'
+      - ''
+      - '&#555555&oCrafted Baúls expire after'
+      - '&#555555&o2 weeks.'
+      - ''
+      - '&#FFAA00Click to craft.'
+
+  # GUI items
+  Items:
+
+    # Item that shows your points balance
+    Points:
+      Enabled: true
+      Name: '&#FFAA00&lLoot Points'
+      Material: 'POPPY'
+      Slot: 6
+      Lore:
+        - '&#AA00AAYou have: &#55FF55%points_available%'
+        - '&#AAAAAALoot points are given from finding'
+        - '&#AAAAAAduplicates inside of Baúls, and'
+        - '&#AAAAAAcan be crafted into Baúls inside'
+        - '&#AAAAAABaúl Machines.'
+
+    # Item that shows player information
+    PlayerInfo:
+      Enabled: true
+      Name: '&#FFAA00&l%player%'
+      Material: 'PLAYER_HEAD'
+      Slot: 4
+      Lore:
+        - '&#AA00AABaúls: &#55FF55%baul_available%'
+        - '&#AA00AALoot Points: &#55FF55%baul_points%'
+
+    # Back item
+    Back:
+      Name: '&#5555FFBack'
+      Material: 'BOOK'
+      Slot: 5
+      Lore:
+        - '&#AAAAAAGO back to the previous'
+        - '&#AAAAAAmenu.'

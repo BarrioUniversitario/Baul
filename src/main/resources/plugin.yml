@@ -1,0 +1,7 @@
+name: Baul
+version: ${version}
+main: me.davidml16.baul.Main
+depend: [ ProtocolLib ]
+softdepend: [ PlaceholderAPI, Vault, Multiverse-Core, Hyperverse, HolographicDisplays, DecentHolograms ]
+authors: [ DavidML16, Fedox ]
+api-version: 1.13

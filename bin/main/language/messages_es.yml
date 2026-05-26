@@ -1,0 +1,113 @@
+#
+# Archivo de mensajes de Baúl
+# Puedes cambiar cualquier mensaje en este archivo
+#
+# Si quieres restablecer un mensaje a su valor por defecto,
+# elimina la línea completa del mensaje y reinicia el servidor.
+#
+
+Prefix: '<gradient:#FFAA00:#FF6600><bold><italic>Baúl</italic></bold> <italic><gray>»</gray></italic></gradient>'
+
+Times:
+  Days: dias
+  Day: dia
+  Hours: horas
+  Hour: hora
+  Minutes: minutos
+  Minute: minuto
+  Seconds: segundos
+  Second: segundo
+
+Commands:
+  NoPerms: '%prefix% <red><italic>¡No tienes permisos para usar este comando!</italic></red>'
+  Reload: '%prefix% <gradient:#00FF00:#55FF55><italic>Plugin recargado sin errores!</italic></gradient>'
+  Balance:
+    Cubelets: '<gradient:#55FF55:#00AA00>Actualmente tienes <bold><gold>%baul_available%</gold></bold> <italic>baúles</italic> para abrir!</gradient>'
+    Points: '<gradient:#55FF55:#00AA00>Actualmente tienes <bold><gold>%baul_points%</gold></bold> <italic>puntos de botín!</italic></gradient>'
+  Cubelets:
+    Give: '%prefix% <gradient:#55FF55:#00AA00>Enviados <bold><yellow>%amount%x %baul%</yellow></bold> a <italic><yellow>%player%</yellow></italic></gradient>'
+    Remove:
+      Removed: '%prefix% <gradient:#55FF55:#00AA00>Quitados <bold><yellow>%amount%x %baul%</yellow></bold> de <italic><yellow>%player%</yellow></italic></gradient>'
+      NoBalance: '%prefix% <gold>%player%</gold> <red><italic>no tiene</italic> <gold>%amount%x %baul%</gold>. <italic>Balance actual:</italic> <gold>%balance%</gold></red>'
+    Clear: '%prefix% <gradient:#55FF55:#00AA00>Borrados los <italic>baúles</italic> de <bold><gold>%player%</gold></bold></gradient>'
+    Gift:
+      Yourself: '%prefix% <red><italic>¡No puedes regalarte <bold>baúles</bold> a ti mismo!</italic></red>'
+      Gifted: '%prefix% <gradient:#55FF55:#00AA00>Regalados <bold><yellow>%amount%x %baul%</yellow></bold> a <italic><yellow>%player%</yellow></italic></gradient>'
+      Received: '%prefix% <gradient:#55FF55:#00AA00>Has recibido <bold><yellow>%amount%x %baul%</yellow></bold> de <italic><yellow>%player%</yellow></italic></gradient>'
+    GiveKey:
+      Give: '%prefix% <gradient:#55FF55:#00AA00>Enviadas <bold><yellow>%amount%x llave(s) de %baul%</yellow></bold> a <italic><yellow>%player%</yellow></italic></gradient>'
+      Received: '%prefix% <gradient:#55FF55:#00AA00>Recibidas <bold><yellow>%amount%x llave(s) de %baul%</yellow></bold></gradient>'
+    Info:
+      NotHave: '%prefix% <bold><gradient:#FFAA00:#FF6600>%player%</gradient></bold> <red><italic>no tiene <bold>baúles</bold></italic></red>'
+      Have:
+        Header: '%prefix% <bold><gradient:#FFAA00:#FF6600>%player%</gradient></bold> <gradient:#55FF55:#00AA00><italic>tiene los siguientes <bold>baúles</bold>:</italic></gradient>'
+        List: ' <gray>-</gray> <white>%baul%</white> <dark_gray>x%amount%</dark_gray>'
+  Points:
+    Give: '%prefix% <gradient:#55FF55:#00AA00>Enviados <bold><yellow>%amount%x Puntos</yellow></bold> a <italic><yellow>%player%</yellow></italic></gradient>'
+    Set: '%prefix% <gradient:#55FF55:#00AA00>Establecidos <bold><yellow>%amount%x Puntos</yellow></bold> a <italic><yellow>%player%</yellow></italic></gradient>'
+    Remove:
+      Removed: '%prefix% <gradient:#55FF55:#00AA00>Quitados <bold><yellow>%amount%x Puntos</yellow></bold> de <italic><yellow>%player%</yellow></italic></gradient>'
+      NoBalance: '%prefix% <gold>%player%</gold> <red><italic>no tiene</italic> <gold>%amount%x Puntos</gold>. <italic>Balance actual:</italic> <gold>%balance%</gold></red>'
+    Info: '%prefix% <bold><gradient:#FFAA00:#FF6600>%player%</gradient></bold> <gradient:#55FF55:#00AA00>tiene <bold><gold>%amount%</gold></bold> Puntos.</gradient>'
+
+Admin:
+  Cubelet:
+    Setup:
+      TypeIcon:
+        ErrorHoldCorrectItem: '%prefix% <red><italic>¡Debes tener un objeto en tu mano!</italic></red>'
+
+Cubelet:
+  LoginReminder:
+    - ''
+    - '<gradient:#FFAA00:#FF6600><bold>%player%</bold></gradient> <gradient:#55FF55:#00AA00><italic>aún tienes</italic> <bold><gold>%amount%</gold></bold> <italic>baúles</italic> por abrir!</gradient>'
+    - ''
+  BoxInUse:
+    Me: '<red><italic>¡Ya estás abriendo un</italic> <bold><gradient:#FFAA00:#FF6600>Baúl</gradient></bold> <italic>en esta máquina!</italic></red>'
+    Other: '<bold><gradient:#FFAA00:#FF6600>%player%</gradient></bold> <red><italic>está abriendo un</italic> <bold><gradient:#FFAA00:#FF6600>Baúl</gradient></bold> <italic>en esta máquina!</italic></red>'
+  Reward:
+    Broadcast: '%prefix% <bold><gradient:#FFAA00:#FF6600>%player%</gradient></bold> <gradient:#55FF55:#00AA00>consiguió <bold><gradient:#FF5555:#FF0000>%reward%</gradient></bold> en <bold><gradient:#FFAA00:#FF6600>%baul%</gradient></bold></gradient>'
+    New:
+      - ''
+      - '<center><bold><gradient:#FFAA00:#FF6600>%baul_type%</gradient> <gray><italic>Botín</italic></gray></bold></center>'
+      - '<center><color:#AA00AA><italic>Has encontrado:</italic> <bold><gradient:#00FF00:#55FF55>%reward_name%</gradient></bold></color></center>'
+      - '<center><color:#AA00AA><italic>Rareza:</italic> %reward_rarity%</color></center>'
+      - ''
+    Duplicate:
+      - ''
+      - '<center><bold><gradient:#FFAA00:#FF6600>%baul_type%</gradient> <gray><italic>Botín</italic></gray></bold></center>'
+      - '<center><color:#AA00AA><italic>Has encontrado:</italic> <bold><gradient:#00FF00:#55FF55>%reward_name%</gradient></bold></color></center>'
+      - '<center><color:#AA00AA><italic>Rareza:</italic> %reward_rarity%</color></center>'
+      - '<center><color:#AA00AA><italic>Recompensa duplicada:</italic> <bold><gradient:#00FF00:#55FF55>%points% Puntos de Botín</gradient></bold></color></center>'
+      - ''
+  NoCubelets:
+    - ''
+    - '<center><gradient:#55FF55:#00AA00><italic>Puedes comprar</italic> <bold>Baúles</bold> <italic>en nuestra tienda</italic> <bold><color:#FF0000>✪ AQUÍ ✪</color></bold></gradient></center>'
+    - '<center><gradient:#FFAA00:#FF6600>https://ejemplo.com</gradient></center>'
+    - ''
+
+Holograms:
+  CubeletAvailable:
+    - '<bold><gradient:#FFAA00:#FF6600>Máquina de Baúles</gradient></bold>'
+    - '<color:#55AAFF><italic>Click para abrir</italic></color>'
+    - '%blink%%baul_available% <italic>Baúles</italic>'
+  NoCubeletAvailable:
+    - '<bold><gradient:#FFAA00:#FF6600>Máquina de Baúles</gradient></bold>'
+    - '<color:#55AAFF><italic>Click para abrir</italic></color>'
+  Reward:
+    New:
+      Me:
+        - '<gradient:#55FF55:#00AA00><italic>Has encontrado</italic></gradient>'
+        - '<bold><gradient:#FFFF55:#FFAA00>%reward_name%</gradient></bold>'
+        - '<color:#AA00AA><italic>Rareza:</italic> %reward_rarity%</color>'
+        - '%reward_icon%'
+      Other:
+        - '<gradient:#55FF55:#00AA00><italic>%player% ha encontrado</italic></gradient>'
+        - '<bold><gradient:#FFFF55:#FFAA00>%reward_name%</gradient></bold>'
+        - '<color:#AA00AA><italic>Rareza:</italic> %reward_rarity%</color>'
+        - '%reward_icon%'
+    Duplicate:
+      - '<bold><gradient:#00FFFF:#00AAAA>DUPLICADO</gradient></bold>'
+      - '<bold><gradient:#FFAA00:#FF6600>+%points% Puntos de Botín</gradient></bold>'
+      - '<bold><gradient:#FFFF55:#FFAA00>%reward_name%</gradient></bold>'
+      - '<color:#AA00AA><italic>Rareza:</italic> %reward_rarity%</color>'
+      - '%reward_icon%'
